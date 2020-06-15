@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form SanberBook</title>
+</head>
+
+<body>
+    <header>
+        <h1>Buat Account Baru!</h1>
+        <h3>Sign Up Form</h3>
+    </header>
+    <main>
+        <section>
+            <p>First name:</p>
+            <input type="text" name="first-name">
+        </section>
+        <form action="./welcome.html" method="GET">
+            <section>
+                <p>Last name:</p>
+                <input type="text" name="last-name">
+            </section>
+            <section>
+                <p>Gender:</p>
+                <div>
+                    <input type="radio" value="Male" name="gender" id="gender-male">
+                    <label for="gender-male">Male</label>
+                </div>
+                <div>
+                    <input type="radio" value="Female" name="gender" id="gender-female">
+                    <label for="gender-female">Female</label>
+                </div>
+                <div>
+                    <input type="radio" value="Other" name="gender" id="gender-other">
+                    <label for="gender-other">Other</label>
+                </div>
+            </section>
+            <section>
+                <p>Nationality:</p>
+                <select name="nationality">
+                    <option value="indonesians">Indonesians</option>
+                    <option value="singaporeans">Singaporeans</option>
+                    <option value="malaysians">Malaysians</option>
+                    <option value="australians">Australians</option>
+                </select>
+            </section>
+            <section>
+                <p>Language Spoken:</p>
+                <div>
+                    <input type="checkbox" name="language" id="bahasa-indonesia" value="indonesia">
+                    <label for="bahasa-indonesia">Bahasa Indonesia</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="language" id="english" value="english">
+                    <label for="english">English</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="language" id="other" value="other">
+                    <label for="other">Other</label>
+                </div>
+            </section>
+            <section>
+                <p>Bio:</p>
+                <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+            </section>
+            <section>
+                <button type="submit">Sign Up</button>
+            </section>
+        </form>
+    </main>
+</body>
+
+</html>
